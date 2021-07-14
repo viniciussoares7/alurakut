@@ -1,1 +1,2 @@
-<h1>alurakut  - Imersão React 3a edição</h1>
+<h1 align="center">alurakut</h1>
+<h2 align="center">Alura  - Imersão React 3a edição</h2>
