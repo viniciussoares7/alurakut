@@ -5,7 +5,7 @@ import NextLink from 'next/link'
 const BASE_URL = 'http://alurakut.vercel.app/'
 const v = '1'
 
-export function Link({ href, children, ...props }) {
+function Link({ href, children, ...props }) {
   return (
     <NextLink href={href} passHref>
       <a {...props}>{children}</a>
@@ -167,7 +167,7 @@ AlurakutMenu.Logo = styled.img`
   height: 34px;
 `
 
-export function AlurakutMenuProfileSidebar({ githubUser }) {
+function AlurakutMenuProfileSidebar({ githubUser }) {
   return (
     <div className="alurakutMenuProfileSidebar">
       <div>
@@ -347,7 +347,7 @@ OrkutNostalgicIconSet.List = styled.ul`
 // ================================================================================================================
 // Login Page
 // ================================================================================================================
-export const AlurakutLoginScreen = css`
+const AlurakutLoginScreen = css`
   :root {
     --backgroundPrimary: #d9e6f6;
     --backgroundSecondary: #f1f9fe;
