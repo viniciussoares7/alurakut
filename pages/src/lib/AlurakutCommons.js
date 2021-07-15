@@ -5,7 +5,7 @@ import NextLink from 'next/link'
 const BASE_URL = 'http://alurakut.vercel.app/'
 const v = '1'
 
-function Link({ href, children, ...props }) {
+export function Link({ href, children, ...props }) {
   return (
     <NextLink href={href} passHref>
       <a {...props}>{children}</a>
@@ -167,7 +167,7 @@ AlurakutMenu.Logo = styled.img`
   height: 34px;
 `
 
-function AlurakutMenuProfileSidebar({ githubUser }) {
+export function AlurakutMenuProfileSidebar({ githubUser }) {
   return (
     <div className="alurakutMenuProfileSidebar">
       <div>
